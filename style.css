@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(247, 223, 223);
+    color: rgb(17, 17, 17)
+}
+.hackermode-body{
+    color: rgb(26, 255, 0);
+    border: 1px solid rgb(26, 255, 0);
+    background-color: black;
+}
+header{
+    background-color: rgb(206, 172, 142);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    gap: 3rem;
+    border-radius: 1rem;
+}
+.hackermode-item-backgrounds{
+    background-color: rgb(42, 42, 42);
+}
+header h1{
+    font-size: 3rem;
+}
+header img{
+    max-width: 5rem;  
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.3rem;
+}
+.hackermode-bottom-border{
+    border-bottom: 1px solid rgb(26, 255, 0);
+}
+main{
+    margin: 2rem;
+}
+main h2{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(6, 6, 6);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem;
+    list-style: none;
+    justify-content: center;
+}
+ul img{
+    width: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(206, 172, 142);
+    border-radius: 1rem;
+    height: 12rem;
+}
+a:target{
+    background-color: aqua;
+}
+@media (max-width: 1000px) {
+    .header-container {
+        display: flex;
+    } 
+    header {
+        display: flex;
+        flex-direction: column;
+  }
+}
+@media (max-width: 1250px) {
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  }
+}
