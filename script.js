@@ -1,10 +1,11 @@
-const hackerbutton = document.querySelector('#hacker-button');
+const hackerbutton = document.querySelector('.hacker-button');
 hackerbutton.addEventListener('click', hackerMode)
 
 
 const navs = document.querySelectorAll('nav a, header, body')
 const headersUl = document.querySelectorAll('header, ul img');
 const h2s = document.querySelectorAll('h2');
+const hackerBtn = document.querySelector('.hacker-button');
 
 function hackerMode(){
     // hackermodeBody.classList.toggle('hackermode-body');
@@ -18,4 +19,5 @@ function hackerMode(){
     h2s.forEach(itemBackground =>{
         itemBackground.classList.toggle('hackermode-bottom-border');
     })
+    hackerBtn.classList.toggle('hacker-button-dark');
 }

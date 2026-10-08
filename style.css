@@ -46,6 +46,21 @@ nav a{
     border: 1px solid rgb(0, 0, 0);
     padding: 0.3rem;
 }
+
+.hacker-button{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.3rem;
+    background-color: rgb(206, 172, 142);
+}
+.hacker-button-dark{
+    text-decoration: none;
+    border: 1px solid rgb(26, 255, 0);
+    background-color: black;
+    color: rgb(26, 255, 0);
+}
+
 .hackermode-bottom-border{
     border-bottom: 1px solid rgb(26, 255, 0);
 }
