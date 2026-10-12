@@ -1,28 +1,29 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(247, 223, 223);
+    background-color: rgb(221, 219, 218);
     color: rgb(17, 17, 17)
 }
 .hackermode-body{
     color: rgb(26, 255, 0);
-    border: 1px solid rgb(26, 255, 0);
     background-color: black;
+    border: 1px solid rgb(26, 255, 0);
 }
 header{
-    background-color: rgb(206, 172, 142);
+    background-color: rgb(252, 124, 74);
     display: flex;
     align-items: center;
     padding: 1rem;
     margin: 0.5rem;
     gap: 3rem;
     border-radius: 1rem;
-}
-.hackermode-item-backgrounds{
-    background-color: rgb(42, 42, 42);
+    position: sticky;
+    top: 8px;
+    z-index: 100;
 }
 header h1{
     font-size: 3rem;
@@ -45,6 +46,7 @@ nav a{
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
     padding: 0.3rem;
+    background-color: rgb(218, 144, 47);
 }
 
 .hacker-button{
@@ -52,7 +54,7 @@ nav a{
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
     padding: 0.3rem;
-    background-color: rgb(206, 172, 142);
+    background-color: rgb(218, 144, 47);
 }
 .hacker-button-dark{
     text-decoration: none;
@@ -70,6 +72,8 @@ main{
 main h2{
     padding: 1rem;
     border-bottom: 1px solid rgb(6, 6, 6);
+    display: flex;
+    justify-content: center;
 }
 ul{
     display: flex;
@@ -79,17 +83,39 @@ ul{
     list-style: none;
     justify-content: center;
 }
+li{
+    background-color: rgb(233, 155, 37);
+    border-radius: 1rem;
+}
+li:has(input[type="radio"]:checked){
+    background-color: rgb(65, 64, 64);
+    transition: 0.3s;
+    transform: scale(0.95, 0.95);
+    
+}
+.hackermode{
+    background-color: rgb(19, 18, 18);
+    border: 1px solid rgb(26, 255, 0);
+}
 ul img{
     width: 14rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(206, 172, 142);
-    border-radius: 1rem;
     height: 12rem;
+    cursor: pointer;
 }
+input[type="radio"]{
+    display: none;
+}
+
 a:target{
     background-color: aqua;
 }
+
+section{
+    scroll-margin-top: 130px;
+}
+
 @media (max-width: 1000px) {
     .header-container {
         display: flex;
