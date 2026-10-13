@@ -8,12 +8,11 @@ const h2s = document.querySelectorAll('h2');
 const hackerBtn = document.querySelector('.hacker-button');
 const selectedRadioBtn = document.querySelectorAll('li')
 const inputs = document.querySelectorAll('input');
+
 const textOutput = document.querySelector('#text-output');
 let totalValue = 0;
 
 function hackerMode(){
-    // hackermodeBody.classList.toggle('hackermode-body');
-    // hackermodeHeader.classList.toggle('hackermode-header')
     navs.forEach(navLoop =>{
         navLoop.classList.toggle('hackermode-body');
     })
@@ -37,9 +36,9 @@ function calculatePrice(){
         }
     }
     if (totalValue >= 30000){
-        textOutput.textContent = 'Du är en gamer ' + totalValue;
+        textOutput.textContent = 'Du är en gamer. Din setups totala värde är ' + totalValue + 'kr';
     } else{
-        textOutput.textContent = 'Du är en noob ' + totalValue;
+        textOutput.textContent = 'Du är en noob. Din setups totala värde är ' + totalValue + 'kr';
     }
 }
 

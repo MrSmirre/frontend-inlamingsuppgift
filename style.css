@@ -1,18 +1,18 @@
+/*Regler för hela sidan*/
 *{
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+/*Styling för sidan*/
 body{
     background-color: rgb(221, 219, 218);
     color: rgb(17, 17, 17)
 }
-.hackermode-body{
-    color: rgb(26, 255, 0);
-    background-color: black;
-    border: 1px solid rgb(26, 255, 0);
-}
+
 header{
     background-color: rgb(252, 124, 74);
     display: flex;
@@ -25,22 +25,22 @@ header{
     top: 8px;
     z-index: 100;
 }
+
 header h1{
     font-size: 3rem;
 }
+
 header img{
     max-width: 5rem;  
 }
-.header-container{
-    display: flex;
-    flex-direction: row;
-}
+
 nav{
     margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -49,33 +49,17 @@ nav a{
     background-color: rgb(218, 144, 47);
 }
 
-.hacker-button{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 6px;
-    background-color: rgb(218, 144, 47);
-}
-.hacker-button-dark{
-    text-decoration: none;
-    border: 1px solid rgb(26, 255, 0);
-    background-color: black;
-    color: rgb(26, 255, 0);
-    margin-top: 16px;
-}
-
-.hackermode-bottom-border{
-    border-bottom: 1px solid rgb(26, 255, 0);
-}
 main{
     margin: 2rem;
 }
+
 main h2{
     padding: 1rem;
     border-bottom: 1px solid rgb(6, 6, 6);
     display: flex;
     justify-content: center;
 }
+
 ul{
     display: flex;
     flex-direction: row;
@@ -84,20 +68,19 @@ ul{
     list-style: none;
     justify-content: center;
 }
+
 li{
     background-color: rgb(233, 155, 37);
     border-radius: 1rem;
 }
+
 li:has(input[type="radio"]:checked){
     background-color: rgb(65, 64, 64);
     transition: 0.3s;
     transform: scale(0.95, 0.95);
     
 }
-.hackermode{
-    background-color: rgb(19, 18, 18);
-    border: 1px solid rgb(26, 255, 0);
-}
+
 ul img{
     width: 14rem;
     display: flex;
@@ -117,6 +100,19 @@ section{
     scroll-margin-top: 130px;
 }
 
+.header-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.hacker-button{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 6px;
+    background-color: rgb(218, 144, 47);
+}
+
 #text-output{
     display: flex;
     justify-content: center;
@@ -125,6 +121,32 @@ section{
     padding: 2rem;
 }
 
+/* Hackermode alla ccs-regler för detta */
+.hackermode-body{
+    color: rgb(26, 255, 0);
+    background-color: black;
+    border: 1px solid rgb(26, 255, 0);
+}
+
+.hacker-button-dark{
+    text-decoration: none;
+    border: 1px solid rgb(26, 255, 0);
+    background-color: black;
+    color: rgb(26, 255, 0);
+    margin-top: 16px;
+}
+
+.hackermode-bottom-border{
+    border-bottom: 1px solid rgb(26, 255, 0);
+}
+
+.hackermode{
+    background-color: rgb(19, 18, 18);
+    border: 1px solid rgb(26, 255, 0);
+}
+
+
+/* Alla mina @media nedan för att få en responsiv sida  */
 @media (max-width: 500px) {
     nav a{
         display: flex;
@@ -150,10 +172,12 @@ section{
     .header-container {
         display: flex;
     } 
+
     header {
         display: flex;
         flex-direction: column;
   }
+
     #text-output{
     display: flex;
     justify-content: center;
