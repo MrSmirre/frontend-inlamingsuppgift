@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
 }
 body{
-    font-family: 'Courier New', Courier, monospace;
     background-color: rgb(221, 219, 218);
     color: rgb(17, 17, 17)
 }
@@ -53,7 +53,7 @@ nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
-    padding: 0.3rem;
+    padding: 6px;
     background-color: rgb(218, 144, 47);
 }
 .hacker-button-dark{
@@ -61,6 +61,7 @@ nav a{
     border: 1px solid rgb(26, 255, 0);
     background-color: black;
     color: rgb(26, 255, 0);
+    margin-top: 16px;
 }
 
 .hackermode-bottom-border{
@@ -116,6 +117,35 @@ section{
     scroll-margin-top: 130px;
 }
 
+#text-output{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+@media (max-width: 500px) {
+    nav a{
+        display: flex;
+        padding-left: auto;
+        padding-right: auto;
+        margin-top: 8px;
+    }
+    .hacker-button{
+        display: flex;
+        padding-left: auto;
+        padding-right: auto;
+        margin-top: 8px;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
 @media (max-width: 1000px) {
     .header-container {
         display: flex;
@@ -124,11 +154,20 @@ section{
         display: flex;
         flex-direction: column;
   }
+    #text-output{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    font-size: 1.5rem;
+    padding: 2rem;
+    }
 }
-@media (max-width: 1250px) {
+
+@media (max-width: 1700px) {
     ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-  }
+    }
 }
+
