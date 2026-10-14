@@ -1,33 +1,46 @@
+/**
+ * Variabler för hackerbutton och funktion
+ */
 const hackerbutton = document.querySelector('.hacker-button');
 hackerbutton.addEventListener('click', hackerMode)
 
-
-const navs = document.querySelectorAll('nav a, header, body')
-const headersUl = document.querySelectorAll('header');
+/**
+ * Variabler för hackermode/darkmode
+ */
+const body = document.querySelectorAll('nav a, header, body')
 const h2s = document.querySelectorAll('h2');
 const hackerBtn = document.querySelector('.hacker-button');
 const selectedRadioBtn = document.querySelectorAll('li')
 const inputs = document.querySelectorAll('input');
 
+/**
+ * variabler för att räkna ut priset och för att priset och texten ska synas på sidan
+ */
 const textOutput = document.querySelector('#text-output');
 let totalValue = 0;
 
+/**
+ * Funktionen för hackerbutton/darkmode 
+ */
 function hackerMode(){
-    navs.forEach(navLoop =>{
+    body.forEach(navLoop =>{
         navLoop.classList.toggle('hackermode-body');
     })
-    headersUl.forEach(itemBackground =>{
-        itemBackground.classList.toggle('hackermode-item-backgrounds');
-    })
+
     h2s.forEach(itemBackground =>{
         itemBackground.classList.toggle('hackermode-bottom-border');
     })
+
+    hackerBtn.classList.toggle('hacker-button-dark');
+
     selectedRadioBtn.forEach(btn =>{
         btn.classList.toggle('hackermode');
     })
-    hackerBtn.classList.toggle('hacker-button-dark');
 }
 
+/**
+ * Funktion för att räkna ut pris och se om du är en gamer
+ */
 function calculatePrice(){
     totalValue = 0;
     for (input of inputs){

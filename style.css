@@ -6,7 +6,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 /*Styling för sidan*/
 body{
     background-color: rgb(221, 219, 218);
@@ -90,10 +89,6 @@ ul img{
 }
 input[type="radio"]{
     display: none;
-}
-
-a:target{
-    background-color: aqua;
 }
 
 section{
