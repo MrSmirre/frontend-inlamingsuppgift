@@ -1,4 +1,4 @@
-# [Är du en riktig gamer?]
+# Är du en riktig gamer?
 
 ## Om sidan
 Min sida handlar om att bygga sin egna drömsetup för gaming. Besökaren kan välja mellan olika datorer, hörlurar, tangentbord, skärmar och möss. Sidan är främst till för personer som gillar gaming och datorer, men även för andra som tycker det är kul att jämföra olika setups.
